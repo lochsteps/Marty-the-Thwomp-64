@@ -99,7 +99,7 @@ local healthMeter = {
 
 local CSloaded = false
 local function on_character_select_load()
-    CT_CHAR = _G.charSelect.character_add("Marty the Thwomp", {"That one jailed Thwomp", "from Mario Kart."}, "Custom Model Creator", {r = 255, g = 200, b = 200}, E_MODEL_CUSTOM_MODEL, CT_MARIO, TEX_CUSTOM_LIFE_ICON)
+    CT_CHAR = _G.charSelect.character_add("Marty the Thwomp", {"That one jailed Thwomp", "from Mario Kart."}, "Nessie", {r = 255, g = 200, b = 200}, E_MODEL_CUSTOM_MODEL, CT_MARIO, TEX_CUSTOM_LIFE_ICON)
     _G.charSelect.character_add_caps(E_MODEL_CUSTOM_MODEL, CAPTABLE_MARTY)
     _G.charSelect.character_add_voice(E_MODEL_CUSTOM_MODEL, VOICETABLE_MARTY)
     _G.charSelect.character_add_palette_preset(E_MODEL_CUSTOM_MODEL, PALETTE_CHAR)
