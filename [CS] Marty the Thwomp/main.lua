@@ -52,14 +52,12 @@ local VOICETABLE_MARTY = {
 }
 
 -- All Located in "actors"
-local CAPTABLE_CHAR = {
+local CAPTABLE_MARTY = {
     normal = smlua_model_util_get_id("martynormal_geo"),
     wing = smlua_model_util_get_id("martywing_geo"),
     metal = smlua_model_util_get_id("martycapmetal_geo"),
     metalWing = smlua_model_util_get_id("martycapwing_geo"),
 }
-
-local E_MODEL_CUSTOM_STAR = smlua_model_util_get_id("custom_model_star_geo") -- Located in "actors"
 
 local PALETTE_CHAR = {
     [PANTS]  = "ffffff",
@@ -99,7 +97,7 @@ local healthMeter = {
 
 local CSloaded = false
 local function on_character_select_load()
-    CT_CHAR = _G.charSelect.character_add("Marty the Thwomp", {"That one jailed Thwomp", "from Mario Kart."}, "Nessie", {r = 255, g = 200, b = 200}, E_MODEL_CUSTOM_MODEL, CT_MARIO, TEX_CUSTOM_LIFE_ICON)
+    CT_CHAR = _G.charSelect.character_add("Marty the Thwomp", {"That one jailed Thwomp", "from Mario Kart."}, "nessie.", {r = 255, g = 200, b = 200}, E_MODEL_CUSTOM_MODEL, CT_MARIO, TEX_CUSTOM_LIFE_ICON)
     _G.charSelect.character_add_caps(E_MODEL_CUSTOM_MODEL, CAPTABLE_MARTY)
     _G.charSelect.character_add_voice(E_MODEL_CUSTOM_MODEL, VOICETABLE_MARTY)
     _G.charSelect.character_add_palette_preset(E_MODEL_CUSTOM_MODEL, PALETTE_CHAR)
